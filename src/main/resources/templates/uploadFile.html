@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+	<h1>Spring Boot file upload example</h1>
+
+	<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+		
+			
+			<input class="fileInput" type="file" name="files[]" multiple required />
+			<img class="outputImage" style="width: 250px !important" /><br /> <br />
+		
+		
+		
+			
+			<input class="fileInput" type="file"  name="files[]" multiple required />
+			<img class="outputImage" style="width: 250px !important" /><br /> <br />
+	
+
+<!-- 		<input type="text" name="extraField" /><br /> <br />  -->
+				
+		<br /> <input type="button" value="Submit" id="btnSubmit" />
+	</form>
+	<h1>Ajax Post Result</h1>
+	<pre>
+    <span id="result"></span>
+	</pre>
+
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/mainUp.js"></script>
+
+</body>
+</html>
